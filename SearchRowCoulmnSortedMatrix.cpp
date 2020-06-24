@@ -6,9 +6,10 @@
 */
 int search( int n,int m, int x, int mat[SIZE][SIZE])
 {
+    //checking if element is out of boundary elements
     if (n == 0 || m==0) 
         return 0;
-    //checking if element is out of boundary elements
+    
     if(x<mat[0][0] || x>mat[n-1][m-1])
         return 0;
     int i=0;
